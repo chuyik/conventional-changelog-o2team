@@ -64,7 +64,7 @@ betterThanBefore.setups([
   }
 ])
 
-describe('angular preset', function () {
+describe('o2team preset', function () {
   it('should work if there is no semver tag', function (done) {
     preparing(1)
 
@@ -87,12 +87,12 @@ describe('angular preset', function () {
         expect(chunk).to.include('New build system.')
         expect(chunk).to.include('Not backward compatible.')
         expect(chunk).to.include('**compile:** The Change is huge.')
-        expect(chunk).to.include('Build System')
-        expect(chunk).to.include('Continuous Integration')
-        expect(chunk).to.include('Features')
-        expect(chunk).to.include('Bug Fixes')
-        expect(chunk).to.include('Performance Improvements')
-        expect(chunk).to.include('Reverts')
+        expect(chunk).to.include('构建')
+        expect(chunk).to.include('集成测试')
+        expect(chunk).to.include('新功能')
+        expect(chunk).to.include('问题修复')
+        expect(chunk).to.include('性能优化')
+        expect(chunk).to.include('代码回滚')
         expect(chunk).to.include('bad commit')
         expect(chunk).to.include('BREAKING CHANGE')
 
@@ -169,12 +169,12 @@ describe('angular preset', function () {
       .pipe(through(function (chunk) {
         chunk = chunk.toString()
 
-        expect(chunk).to.include('Continuous Integration')
-        expect(chunk).to.include('Build System')
-        expect(chunk).to.include('Documentation')
-        expect(chunk).to.include('Styles')
-        expect(chunk).to.include('Code Refactoring')
-        expect(chunk).to.include('Tests')
+        expect(chunk).to.include('集成测试')
+        expect(chunk).to.include('构建')
+        expect(chunk).to.include('文档')
+        expect(chunk).to.include('样式调整')
+        expect(chunk).to.include('代码重构')
+        expect(chunk).to.include('测试')
 
         done()
       }))

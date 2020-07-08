@@ -1,22 +1,20 @@
 # [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
-> [conventional-changelog](https://github.com/ajoslin/conventional-changelog) [angular](https://github.com/angular/angular) preset
+**Issues with the convention itself should be reported on the O2Team issue tracker.**
 
-**Issues with the convention itself should be reported on the Angular issue tracker.**
+## O2Team Convention
 
-## Angular Convention
-
-Angular's [commit message guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit).
+O2Team's [commit message guidelines](https://github.com/O2Team/O2Team/blob/master/CONTRIBUTING.md#commit).
 
 ### Examples
 
-Appears under "Features" header, pencil subheader:
+Appears under "新功能" header, pencil subheader:
 
 ```
 feat(pencil): add 'graphiteWidth' option
 ```
 
-Appears under "Bug Fixes" header, graphite subheader, with a link to issue #28:
+Appears under "问题修复" header, graphite subheader, with a link to issue #28:
 
 ```
 fix(graphite): stop graphite breaking when width < 0.1
@@ -24,7 +22,7 @@ fix(graphite): stop graphite breaking when width < 0.1
 Closes #28
 ```
 
-Appears under "Performance Improvements" header, and under "Breaking Changes" with the breaking change explanation:
+Appears under "性能优化" header, and under "Breaking Changes" with the breaking change explanation:
 
 ```
 perf(pencil): remove graphiteWidth option
@@ -32,7 +30,7 @@ perf(pencil): remove graphiteWidth option
 BREAKING CHANGE: The graphiteWidth option has been removed. The default graphite width of 10mm is always used for performance reason.
 ```
 
-The following commit and commit `667ecc1` do not appear in the changelog if they are under the same release. If not, the revert commit appears under the "Reverts" header.
+The following commit and commit `667ecc1` do not appear in the changelog if they are under the same release. If not, the revert commit appears under the "代码回滚" header.
 
 ```
 revert: feat(pencil): add 'graphiteWidth' option
@@ -64,8 +62,6 @@ If the prefix is `feat`, `fix` or `perf`, it will appear in the changelog. Howev
 
 Other prefixes are up to your discretion. Suggested prefixes are `build`, `ci`, `docs` ,`style`, `refactor`, and `test` for non-changelog related tasks.
 
-Details regarding these types can be found in the official [Angular Contributing Guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#type).
-
 ### Scope
 
 The scope could be anything specifying place of the commit change. For example `$location`,
@@ -93,11 +89,11 @@ reference GitHub issues that this commit **Closes**.
 
 A detailed explanation can be found in this [document](#commit-message-format).
 
-[npm-image]: https://badge.fury.io/js/conventional-changelog-angular.svg
-[npm-url]: https://npmjs.org/package/conventional-changelog-angular
-[travis-image]: https://travis-ci.org/conventional-changelog/conventional-changelog-angular.svg?branch=master
-[travis-url]: https://travis-ci.org/conventional-changelog/conventional-changelog-angular
-[daviddm-image]: https://david-dm.org/conventional-changelog/conventional-changelog-angular.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/conventional-changelog/conventional-changelog-angular
-[coveralls-image]: https://coveralls.io/repos/conventional-changelog/conventional-changelog-angular/badge.svg
-[coveralls-url]: https://coveralls.io/r/conventional-changelog/conventional-changelog-angular
+[npm-image]: https://badge.fury.io/js/conventional-changelog-o2team.svg
+[npm-url]: https://npmjs.org/package/conventional-changelog-o2team
+[travis-image]: https://travis-ci.org/conventional-changelog/conventional-changelog-o2team.svg?branch=master
+[travis-url]: https://travis-ci.org/conventional-changelog/conventional-changelog-o2team
+[daviddm-image]: https://david-dm.org/conventional-changelog/conventional-changelog-o2team.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/conventional-changelog/conventional-changelog-o2team
+[coveralls-image]: https://coveralls.io/repos/conventional-changelog/conventional-changelog-o2team/badge.svg
+[coveralls-url]: https://coveralls.io/r/conventional-changelog/conventional-changelog-o2team

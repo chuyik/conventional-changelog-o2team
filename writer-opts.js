@@ -40,7 +40,7 @@ function getWriterOpts () {
       } else if (commit.type === 'perf') {
         commit.type = '性能优化'
       } else if (commit.type === 'revert' || commit.revert) {
-        commit.type = '回滚'
+        commit.type = '代码回滚'
       } else if (discard) {
         return
       } else if (commit.type === 'docs') {
