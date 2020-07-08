@@ -1,0 +1,35 @@
+{
+  "name": "conventional-changelog-o2team",
+  "version": "5.0.11",
+  "description": "conventional-changelog o2team preset",
+  "main": "index.js",
+  "scripts": {
+    "test-windows": "mocha --timeout 30000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/conventional-changelog/conventional-changelog.git"
+  },
+  "keywords": [
+    "conventional-changelog",
+    "o2team",
+    "preset"
+  ],
+  "files": [
+    "conventional-changelog.js",
+    "conventional-recommended-bump.js",
+    "index.js",
+    "parser-opts.js",
+    "writer-opts.js",
+    "templates"
+  ],
+  "author": "Edward Chu",
+  "engines": {
+    "node": ">=10"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "compare-func": "^2.0.0",
+    "q": "^1.5.1"
+  }
+}
